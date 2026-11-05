@@ -1,0 +1,29 @@
+# 25 MHz Clock
+set_io clk_25mhz 15
+
+# PWM Input from 555 Timer
+set_io pwm_in 65
+
+# Onboard LEDs
+set_io led_out[0] 56
+set_io led_out[1] 57
+set_io led_out[2] 59
+set_io led_out[3] 60
+
+# Flattened 7-Segment Display 1 (Ones digit)
+set_io seg1_a 3
+set_io seg1_b 4
+set_io seg1_c 93
+set_io seg1_d 91
+set_io seg1_e 90
+set_io seg1_f 1
+set_io seg1_g 2
+
+# Flattened 7-Segment Display 2 (Tens digit)
+set_io seg2_a 100
+set_io seg2_b 99
+set_io seg2_c 97
+set_io seg2_d 95
+set_io seg2_e 94
+set_io seg2_f 8
+set_io seg2_g 96
