@@ -10,7 +10,7 @@ SRC = top.sv
 all: $(PROJ).bin
 
 $(PROJ).json: $(SRC)
-	yosys -p "synth_ice40 -top top_pwm_controller -json $@" $(SRC)
+	yosys -p "synth_ice40 -top top -json $@" $(SRC)
 
 $(PROJ).asc: $(PROJ).json $(PIN_DEF)
 	nextpnr-ice40 --$(DEVICE) --package $(PACKAGE) --json $(PROJ).json --pcf $(PIN_DEF) --asc $@
